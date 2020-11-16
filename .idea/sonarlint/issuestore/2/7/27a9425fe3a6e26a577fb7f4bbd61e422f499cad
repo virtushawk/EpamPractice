@@ -1,5 +1,9 @@
 
 Y
-java:S2629	"7Use the built-in formatting to construct this argument.(ßÔÈ‹øÿÿÿÿ8¹˜à‡Û.
+java:S2629"7Use the built-in formatting to construct this argument.(ßÔÈ‹øÿÿÿÿ8¹˜à‡Û.
+h
+java:S3457"KFormat specifiers or lambda should be used instead of string concatenation.(ˆ˜ËÚ8µÌ½Û.
+T
+java:S2629"7Use the built-in formatting to construct this argument.(ˆ˜ËÚ8µÌ½Û.
 m
-java:S3457	"KFormat specifiers or lambda should be used instead of string concatenation.(ßÔÈ‹øÿÿÿÿ8¹˜à‡Û.
+java:S3457"KFormat specifiers or lambda should be used instead of string concatenation.(ßÔÈ‹øÿÿÿÿ8¹˜à‡Û.
