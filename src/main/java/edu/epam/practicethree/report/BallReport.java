@@ -1,7 +1,6 @@
-package edu.epam.practicetwo.report;
+package edu.epam.practicethree.report;
 
-import edu.epam.practicetwo.entity.Basket;
-import java.util.Arrays;
+import edu.epam.practicethree.entity.Basket;
 
 public class BallReport {
     public void basketWeight(Basket basket,double weight){

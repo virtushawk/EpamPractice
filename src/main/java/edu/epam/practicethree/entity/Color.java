@@ -1,4 +1,4 @@
-package edu.epam.practicetwo.entity;
+package edu.epam.practicethree.entity;
 
 public enum Color {
     WHITE,

@@ -1,11 +1,11 @@
-package edu.epam.practicetwo.entity;
+package edu.epam.practicethree.entity;
 
 public class Ball {
     private double weight;
     private Color color;
 
     public Ball(double weight, Color color) {
-        this.weight = weight;
+        setWeight(weight);
         this.color = color;
     }
 
@@ -13,7 +13,10 @@ public class Ball {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(double weight){
+        if (weight <= 0){
+            throw new IllegalArgumentException("Wrong weight : " + weight);
+        }
         this.weight = weight;
     }
 
