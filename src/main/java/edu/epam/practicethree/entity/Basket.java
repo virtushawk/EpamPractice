@@ -16,7 +16,7 @@ public class Basket {
 
     public Ball get(int index) {
         if (index < 0 || index >= balls.size()){
-            throw new IllegalArgumentException("Wrong index");
+            throw new ArrayIndexOutOfBoundsException("wrong index" + index);
         }
         return balls.get(index);
     }
