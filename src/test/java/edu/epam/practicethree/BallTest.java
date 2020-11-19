@@ -3,15 +3,11 @@ package edu.epam.practicethree;
 import edu.epam.practicethree.entity.Ball;
 import edu.epam.practicethree.entity.Basket;
 import edu.epam.practicethree.entity.Color;
-import edu.epam.practicethree.report.BallReport;
 import edu.epam.practicethree.service.BasketService;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.util.ArrayList;
-
 public class BallTest {
-
     public  Basket basket = new Basket();
 
     @BeforeTest
@@ -19,9 +15,9 @@ public class BallTest {
         Ball ballOne = new Ball(5, Color.RED);
         Ball ballTwo = new Ball(10,Color.BLUE);
         Ball ballThree = new Ball(5,Color.BLUE);
-        basket.addBall(ballOne);
-        basket.addBall(ballTwo);
-        basket.addBall(ballThree);
+        basket.add(ballOne);
+        basket.add(ballTwo);
+        basket.add(ballThree);
     }
 
     @AfterTest
@@ -53,5 +49,4 @@ public class BallTest {
         int actual = basketService.numberByWeight(basket,weight);
         Assert.assertEquals(actual,expected);
     }
-
 }

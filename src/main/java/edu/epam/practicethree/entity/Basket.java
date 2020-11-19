@@ -1,16 +1,10 @@
 package edu.epam.practicethree.entity;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Basket {
-     private final ArrayList<Ball> balls;
-
-    public Basket(Ball... balls) {
-        List <Ball> list = Arrays.asList(balls);
-        this.balls = new ArrayList<>(list);
-    }
+    private final ArrayList<Ball> balls;
 
     public Basket(List<Ball> balls){
         this.balls = (ArrayList<Ball>) balls;
@@ -20,14 +14,14 @@ public class Basket {
         balls = new ArrayList<>();
     }
 
-    public Ball getBall(int index) {
+    public Ball get(int index) {
         if (index < 0 || index >= balls.size()){
             throw new IllegalArgumentException("Wrong index");
         }
         return balls.get(index);
     }
 
-    public void addBall(Ball ball) {
+    public void add(Ball ball) {
         balls.add(ball);
     }
 

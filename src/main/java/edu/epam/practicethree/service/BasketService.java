@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BasketService {
-
     public int numberByColor(Basket basket, Color color){
         int count = 0;
         for (Ball ball : basket.getBalls()) {

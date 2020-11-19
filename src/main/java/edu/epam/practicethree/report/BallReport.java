@@ -14,6 +14,7 @@ public class BallReport {
     public void numberByColor(Basket basket,int count,Color color){
         System.out.printf("%s has %d with color %s%n",basket.toString(),count,color.toString());
     }
+
     public void numberByWeight(Basket basket,int count, double weight){
         System.out.printf("%s has %d with weight %f%n",basket.toString(),count,weight);
     }
