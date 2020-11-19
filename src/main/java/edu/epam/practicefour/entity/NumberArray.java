@@ -25,7 +25,7 @@ public class NumberArray {
 
     public int get(int index){
        if (index < 0 || index >= this.array.size()){
-           throw new IllegalArgumentException("Wrong index");
+           throw new ArrayIndexOutOfBoundsException("Wrong index" + index);
        }
        return this.array.get(index);
     }
