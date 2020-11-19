@@ -12,6 +12,10 @@ public class Basket {
         this.balls = new ArrayList<>(list);
     }
 
+    public Basket(List<Ball> balls){
+        this.balls = (ArrayList<Ball>) balls;
+    }
+
     public Basket(){
         balls = new ArrayList<>();
     }
@@ -29,6 +33,10 @@ public class Basket {
 
     public List<Ball> getBalls() {
         return new ArrayList<>(balls);
+    }
+
+    public int size(){
+        return balls.size();
     }
 
     @Override
