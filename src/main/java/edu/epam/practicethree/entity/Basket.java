@@ -2,8 +2,10 @@ package edu.epam.practicethree.entity;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Basket {
+
     private final ArrayList<Ball> balls;
 
     public Basket(List<Ball> balls){
@@ -39,5 +41,22 @@ public class Basket {
         sb.append("balls=").append(balls);
         sb.append('}');
         return sb.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Basket basket = (Basket) o;
+        return Objects.equals(balls, basket.balls);
+    }
+
+    @Override
+    public int hashCode() {
+        int hashcode = 1 ;
+        for (Ball ball : this.balls) {
+            hashcode = 31 * hashcode + ball.hashCode();
+        }
+        return  hashcode;
     }
 }

@@ -36,4 +36,18 @@ public class Ball {
         sb.append('}');
         return sb.toString();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Ball ball = (Ball) o;
+        return Double.compare(ball.weight, weight) == 0 &&
+                color == ball.color;
+    }
+
+    @Override
+    public int hashCode() {
+        return (int) (31 * weight + ((color == null) ? 0 : color.hashCode()));
+    }
 }
