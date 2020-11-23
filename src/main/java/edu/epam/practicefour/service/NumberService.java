@@ -1,8 +1,11 @@
 package edu.epam.practicefour.service;
 
 import edu.epam.practicefour.entity.NumberArray;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class NumberService {
+    private static final Logger logger = LogManager.getLogger(NumberService.class);
 
     public int binarySearch(NumberArray array,int key, int low ,int high){
         int index = -1;
@@ -17,6 +20,7 @@ public class NumberService {
                 break;
             }
         }
+        logger.info("binary search array : {} , key : {} , result : {} ",array,key,index);
         return index;
     }
 
@@ -31,6 +35,7 @@ public class NumberService {
                 max = array.get(i);
             }
         }
+        logger.info("max : {}, result : {} ",array,max);
         return max;
     }
 
@@ -41,6 +46,7 @@ public class NumberService {
                 min = array.get(i);
             }
         }
+        logger.info("min  : {}, result : {} ",array,min);
         return min;
     }
 
@@ -51,6 +57,7 @@ public class NumberService {
                 primeNumbers.add(array.get(i));
             }
         }
+        logger.info("allPrimeNumbers : {}, result : {} ",array,primeNumbers);
         return primeNumbers;
     }
 
@@ -80,6 +87,7 @@ public class NumberService {
                 fibonacciNumber.add(array.get(i));
             }
         }
+        logger.info("allFibonacciNumbers : {}, result : {} ",array,fibonacciNumber);
         return fibonacciNumber;
     }
 
@@ -104,6 +112,7 @@ public class NumberService {
                 uniqueNumbers.add(array.get(i));
             }
         }
+        logger.info("allNumbersWithUniqueDigits : {}, result : {} ",array,uniqueNumbers);
         return uniqueNumbers;
     }
 

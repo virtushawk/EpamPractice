@@ -3,8 +3,6 @@ import edu.epam.practicefour.entity.NumberArray;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.util.ArrayList;
-
 public class NumberSortTest {
 
     public NumberArray array;

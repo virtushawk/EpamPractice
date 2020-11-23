@@ -83,8 +83,6 @@ o
 Ksrc/test/java/edu/epam/practiceone/firsttask/service/NumberServiceTest.java,8\8\8853257803c1d614e8af624564e222a4bfb59ca9
 k
 ;src/main/java/edu/epam/practicethree/report/BallReport.java,1\c\1c07ac74958bbfc68e264b614b31ed1de0210be3
-b
-2src/test/java/edu/epam/practicethree/BallTest.java,c\c\cc5fa40210a12b89262d9156ec96ce3100573f8a
 g
 7src/main/java/edu/epam/practicethree/entity/Basket.java,d\5\d5248f05d8e8b3db34450bb1f84f1678e6b7fa66
 o
@@ -113,3 +111,5 @@ b
 2src/main/java/edu/epam/practicefour/main/Main.java,f\0\f035c93c9712abca59ea67e40cda233f078f8689
 k
 ;src/main/java/edu/epam/practicefour/reader/InputReader.java,f\b\fb2b4c06c1be107e0cef57062777564e5fb056c2
+q
+Asrc/test/java/edu/epam/practicethree/service/BallServiceTest.java,9\d\9dcd18be1b61c3dff59d2c6390af28b3b3bf3e10
